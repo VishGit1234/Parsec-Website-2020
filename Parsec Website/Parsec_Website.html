@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- Change all images including logo with higher quality ones -->
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
@@ -8,6 +9,10 @@
 		
 		<!-- Website Logo (Team Logo) -->
 		<link rel="shortcut icon" href="ParsecLogoSemiTransparent.ico" />
+		
+		<!-- Link to fonts -->
+		<link href="https://fonts.googleapis.com/css2?family=Barlow&family=Playfair+Display:wght@900&display=swap"
+		rel="stylesheet">
 		
 		<!-- Bootstrap setup and other css file-->
 		<meta name="viewport" content="width = device-width, initial-scale = 1">
@@ -27,7 +32,7 @@
 	<body>
 		<!-- Navigation Bar -->
 		<nav class="navbar fixed-top navbar-expand-sm navbar-dark" id="Pnavbar">
-			<img src="ParsecLogoTransparent.png" height="7%" width="7%" style="padding-right: 20px">
+			<img src="ParsecLogoTransparent.png" height="50px" width="65px" style="padding-right: 20px">
 			<ul class="navbar-nav">
 				<!-- Add different links to navbar here -->
 				<li class="nav-item active">
@@ -64,15 +69,18 @@
 			<div class="carousel-inner">
 				<!-- Add Proper Images -->
 				<div class="carousel-item active">
-				  <img src="a.jpg" alt="idk" class="d-block w-100">
+				  <img src="a.jpg" alt="idk" class="carImg">
 				</div>
 				<div class="carousel-item">
-				  <img src="b.jpg" alt="idk" class="d-block w-100">
+				  <img src="b.jpg" alt="idk" class="carImg">
 				</div>	
 				<div class="carousel-item">
-				  <img src="c.jpg" alt="idk" class="d-block w-100">
-				</div>			
+				  <img src="c.jpg" alt="idk" class="carImg">
+				</div>	
 			</div>
+			
+			<!-- Team Name -->
+			<div class="centered">Parsec<br><small class="centered-small">2020-2021</small></div>
 					
 			<!-- Left and right controls -->
 			<a class="carousel-control-prev" href="#HeroCarousel" data-slide="prev">
@@ -86,30 +94,36 @@
 		<div class="container-fluid">
 			<!-- Row of 3 pictures (example pictures currently inserted -->
 			<div class="row">
-				<div class="col pt-5">
-					<img src="Liftoff.jpg" class="mx-auto d-block" alt="idk" width="50%">
+				<div class="col-sm pt-5">
+					<img src="Liftoff.jpg" class="mx-auto d-block shadow-lg p-3 mb-5 bg-transparent rounded" alt="idk" width="90%">
 				</div>
-				<div class="col pt-5">
-					<img src="Liftoff.jpg" class="mx-auto d-block" alt="idk" width="50%">
+				<div class="col-sm pt-5 img3s">
+					<img src="Liftoff.jpg" class="mx-auto d-block shadow-lg p-3 mb-5 bg-transparent rounded" alt="idk" width="90%">
 				</div>
-				<div class="col pt-5">
-					<img src="Liftoff.jpg" class="mx-auto d-block" alt="idk" width="50%">
+				<div class="col-sm pt-5 img3s">
+					<img src="Liftoff.jpg" class="mx-auto d-block shadow-lg p-3 mb-5 bg-transparent rounded" alt="idk" width="90%">
 				</div>
 			</div>
+			
+			<!-- About Us Section -->
+			<h2 class="text-center" style="font-size:3em;">About Us</h2>
+			<p class="text-center" style="font-size:1.2em;">Lorem ipsum dolor sit amet, 
+			consectetur adipiscing elit. Vestibulum rhoncus magna ut odio vulputate porttitor. 
+			Etiam semper, nibh at gravida rutrum, erat ipsum suscipit mi, placerat consequat 
+			felis justo at dolor. Praesent auctor elit nec nisi varius, in sollicitudin nunc 
+			venenatis. Vivamus vel ligula turpis. Sed ac sapien at ligula imperdiet tempus eu 
+			a ipsum. Donec euismod augue volutpat mi dictum pretium. Fusce a nisl tempor, 
+			volutpat ex eget, interdum urna. Aliquam erat volutpat. Nulla sagittis sem ac 
+			augue vulputate, nec mollis nunc rhoncus. Cras vitae commodo nisi. Duis id laoreet
+			sem, sed posuere urna. Duis ullamcorper ut tellus eu faucibus. Praesent velit orci,
+			suscipit id scelerisque vitae, auctor nec mauris. Pellentesque habitant morbi 
+			tristique senectus et netus et malesuada fames ac turpis egestas.</p>
 		</div>
-		<style>
-			footer {
-			  text-align: center;
-			  padding: 3px;
-			  background-color: rgb(82, 24, 7);
-			  color: white;
-			  margin-top: 40px;
-			  padding: 100px;
-			}
-			</style>
+		
 		<footer>
 			<p>Author: Hege Refsnes<br>
 			<a href="mailto:hege@example.com">hege@example.com</a></p>
 			<img src="ParsecLogoSemiTransparent.ico" class="rounded" alt="Cinque Terre">
 		  </footer>
+		
 	</body>
