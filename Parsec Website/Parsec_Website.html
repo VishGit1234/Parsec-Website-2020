@@ -31,15 +31,33 @@
 		crossorigin="anonymous"></script>
 	</head>
 	<body>
+
 		<!-- Navigation Bar -->
-		<nav class="navbar fixed-top navbar-expand-sm navbar-dark" id="Pnavbar">
-			<img src="ParsecLogoTransparent.png" height="50px" width="65px" style="padding-right: 20px">
-			<ul class="navbar-nav">
-				<!-- Add different links to navbar here -->
-				<li class="nav-item active">
-					<a href="#">Home</a>
-				</li>
-			</ul>
+		<nav class="navbar fixed-top navbar-expand-md navbar-dark" id="Pnavbar">
+			<img src="ParsecLogoTransparent.png" class="navbar-brnad" height="50px" width="65px" style="padding-right: 20px">
+			
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			
+			<div class="collapse navbar-collapse" id="collapsibleNavbar">
+				<ul class="navbar-nav">
+					<!-- Add different links to navbar here -->
+					<li class="nav-item active">
+						<a href="#HeroCarouselAnchor" class="pr-3">Home</a>
+					</li>
+					
+					<li class="nav-item active">
+						<a href="#AboutUsAnchor" class="pr-3">About Us</a>
+					</li>
+					
+					<li class="nav-item active">
+						<a href="#TimelineAnchor" class="pr-3">Our Story</a>
+					</li>
+					
+
+				</ul>
+			</div>
 			
 			<!-- Change navbar background color -->
 			<script>
@@ -57,6 +75,7 @@
 		</nav>		
 		
 		<!-- Carousel -->
+		<a class="anchor" id="HeroCarouselAnchor"></a>
 		<div id="HeroCarousel" class="carousel slide carousel-fade" data-ride="carousel">
 		
 			<!-- Carousel Indicators -->
@@ -70,7 +89,7 @@
 			<div class="carousel-inner">
 				<!-- Add Proper Images -->
 				<div class="carousel-item active">
-				  <img src="d.jpg" alt="idk" class="carImg">
+				  <img src="a.jpg" alt="idk" class="carImg">
 				</div>
 				<div class="carousel-item">
 				  <img src="b.jpg" alt="idk" class="carImg">
@@ -92,76 +111,373 @@
 			</a>
 		</div>
 		
-		<div class="container-fluid">
+		<a class="anchor" id="AboutUsAnchor"></a>
+		<div class="container-fluid" id="AboutUs">
+
+			<div class="row justify-content-center" style="background-color:#F7F3E3;">
+				<h2 class="pt-3" style="font-size:3em;">About Us</h2>
+			</div>
+			
 			<!-- Row of 3 pictures (example pictures currently inserted -->
-			<div class="row">
-				<div class="col-sm pt-5">
+			<div class="row" style="background-color:#F7F3E3;">
+				<div class="col-sm pt-2">
 					<img src="Liftoff.jpg" class="mx-auto d-block shadow-lg p-3 mb-5 bg-transparent rounded" alt="idk" width="90%">
 				</div>
-				<div class="col-sm pt-5 img3s">
+				<div class="col-sm pt-2 img3s">
 					<img src="Liftoff.jpg" class="mx-auto d-block shadow-lg p-3 mb-5 bg-transparent rounded" alt="idk" width="90%">
 				</div>
-				<div class="col-sm pt-5 img3s">
+				<div class="col-sm pt-2 img3s">
 					<img src="Liftoff.jpg" class="mx-auto d-block shadow-lg p-3 mb-5 bg-transparent rounded" alt="idk" width="90%">
 				</div>
 			</div>
-			<p class="text-center" style="font-size:1.2em;">Lorem ipsum dolor sit amet, 
-				consectetur adipiscing elit. Vestibulum rhoncus magna ut odio vulputate porttitor. 
-				Etiam semper, nibh at gravida rutrum, erat ipsum suscipit mi, placerat consequat 
-				felis justo at dolor. Praesent auctor elit nec nisi varius, in sollicitudin nunc 
-				venenatis. Vivamus vel ligula turpis. Sed ac sapien at ligula imperdiet tempus eu 
-				a ipsum. Donec euismod augue volutpat mi dictum pretium. </p>
-				<hr class="new5">
-			<!-- About Us Section -->
-			<h2 class="text-center" style="font-size:3em;">About Us</h2>
-			<div class="row">
-				<div class="columna" style="background-color:#aaa;">
-				  <h2>Column 1</h2>
-				  <p>Some text..</p>
+			
+			<div class="row" style="background-color:#F7F3E3;">
+				<p class="text-center mx-auto pb-3" style="width: 80%;">
+				We are Team 3505E, also known as Parsec, a VRC team from Mississauga, Canada. Since our beginnings
+				in 2016 at Zebra Robotics Mississauga, we have gone through many failures, iterations 
+				and successes to become the team we are today. As a team we not only look to compete 
+				in VRC but also have fun and learn along the way! Our team is composed of passionate high-school
+				students that truly enjoy all things robotics.</p>
+			</div>
 
+			
+			<div class="row justify-content-center pt-3 pb-3">
+				<h2 style="font-size:3em;">Meet the team</h2>
+			</div>
+			
+			<!-- Profile Pictures and Popups -->
+			<div class="row">
+				
+				<!-- Nikhil -->
+				<div class="col-sm">
+					<div class="mx-auto profiles">
+						<button type="button" class="btn shadow-none p-0 profBtn" data-toggle="modal" data-target="#Nikhil">
+							<div class="overlay-effect">
+								<img src="Liftoff.jpg" width="100%" alt="idk">
+							</div>
+							
+						</button>
+						
+						<h2 class="text-center">
+							Nikhil
+							<button type="button" class="btn btn-secondary shadow-none p-0 mb-2" data-toggle="modal" data-target="#Nikhil">
+								&#10133;
+							</button>
+						</h2>
+						<p class="text-center">Team Captain</p>
+					</div>
 				</div>
-				<div class="columnb" style="background-color:#bbb;">
-				  <img src="Liftoff.jpg" width="100%" height="100%"class="mx-auto d-block shadow-lg p-3 mb-5 bg-transparent rounded"alt="idk">
+				
+				<!-- Adam -->
+				<div class="col-sm">
+					<div class="mx-auto profiles">
+						<button type="button" class="btn shadow-none p-0 profBtn" data-toggle="modal" data-target="#Adam">
+							<div class="overlay-effect">
+								<img src="Liftoff.jpg" width="100%" alt="idk">
+							</div>
+							
+						</button>
+						<h2 class="text-center">
+							Adam 
+							<button type="button" class="btn btn-secondary shadow-none p-0 mb-2" data-toggle="modal" data-target="#Adam">
+								&#10133;
+							</button>
+						</h2>
+						<p class="text-center">Designing, Building</p>
+					</div>
 				</div>
-				<div class="columnc" style="background-color:#bbb;">
-					<img src="Liftoff.jpg" width="100%" height="100%"class="mx-auto d-block shadow-lg p-3 mb-5 bg-transparent rounded"alt="idk">
-				  </div>
-			    </div>
-			  
-			<p class="text-center" style="font-size:1.2em;">Lorem ipsum dolor sit amet, 
-			consectetur adipiscing elit. Vestibulum rhoncus magna ut odio vulputate porttitor. 
-			Etiam semper, nibh at gravida rutrum, erat ipsum suscipit mi, placerat consequat 
-			felis justo at dolor. Praesent auctor elit nec nisi varius, in sollicitudin nunc 
-			venenatis. Vivamus vel ligula turpis. Sed ac sapien at ligula imperdiet tempus eu 
-			a ipsum. Donec euismod augue volutpat mi dictum pretium. </p>
+				
+				<!-- Armena -->
+				<div class="col-sm">
+					<div class="mx-auto profiles">
+						<button type="button" class="btn shadow-none p-0 profBtn" data-toggle="modal" data-target="#Armena">
+							<div class="overlay-effect">
+								<img src="Liftoff.jpg" width="100%" alt="idk">
+							</div>
+							
+						</button>
+						
+						<h2 class="text-center">
+							Armena
+							<button type="button" class="btn btn-secondary shadow-none p-0 mb-2" data-toggle="modal" data-target="#Armena">
+								&#10133;
+							</button>
+						</h2>
+						<p class="text-center">Documentation, Programming</p>
+					</div>
+				</div>
+			</div>
+			
+			<!-- Another row of profiles -->
+			<div class="row">
+				<!-- Daxsin -->
+				<div class="col-sm">
+					<div class="mx-auto profiles">
+						<button type="button" class="btn shadow-none p-0 profBtn" data-toggle="modal" data-target="#Dasxin">
+							<div class="overlay-effect">
+								<img src="Liftoff.jpg" width="100%" alt="idk">
+							</div>
+							
+						</button>
+						<h2 class="text-center">
+							Daxsin
+							<button type="button" class="btn btn-secondary shadow-none p-0 mb-2" data-toggle="modal" data-target="#Daxsin">
+								&#10133;
+							</button>
+						</h2>
+						<p class="text-center">Roles</p>
+					</div>
+				</div>
+				
+				<!-- Vishal -->
+				<div class="col-sm">
+					<div class="mx-auto profiles">
+						<button type="button" class="btn shadow-none p-0 profBtn" data-toggle="modal" data-target="#Vishal">
+							<div class="overlay-effect">
+								<img src="Liftoff.jpg" width="100%" alt="idk">
+							</div>
+							
+						</button>
+						
+						<h2 class="text-center">
+							Vishal
+							<button type="button" class="btn btn-secondary shadow-none p-0 mb-2" data-toggle="modal" data-target="#Vishal">
+								&#10133;
+							</button>
+						</h2>
+						<p class="text-center">Roles</p>
+					</div>
+				</div>
+				
+				<!-- Joshua -->
+				<div class="col-sm">
+					<div class="mx-auto profiles">
+						<button type="button" class="btn shadow-none p-0 profBtn" data-toggle="modal" data-target="#Joshua">
+							<div class="overlay-effect">
+								<img src="Liftoff.jpg" width="100%" alt="idk">
+							</div>
+							
+						</button>
+						
+						<h2 class="text-center">
+							Joshua
+							<button type="button" class="btn btn-secondary shadow-none p-0 mb-2" data-toggle="modal" data-target="#Joshua">
+								&#10133;
+							</button>
+						</h2>
+						<p class="text-center">Programming, Electrical</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- Adam -->
+			<div class="modal fade" id="Adam">
+				<div class="modal-dialog modal-xl" role="document">
+					<div class="modal-content">
+						
+						<!-- Modal body -->
+						<div class="modal-body">
+							<button type="button" class="close" data-dismiss="modal"><p style="font-size:calc(2vw + 2vh)">&times;</p></button>
+							<br>
+							<h2 class="text-center">Adam</h2>
+							<p class="text-center"><i>Designing, Building</i></p>
+							<img class="mx-auto d-block" src="Liftoff.jpg" width="50%" alt="idk">
+							<p class="text-center" style="font-size:calc(0.8vw + 0.8vh)">Hi, my name is Adam and I am a member of the Parsec 2020-2021 team!
+							Primarily, I contribute to the Design, CAD, and Build of our VEX robot for the Change Up challenge. This means I am responsible
+							for brainstorming and designing various functionalities and optimizations for our robot to complete challenges and score points
+							efficiently. Additionally, I am responsible for taking previously prototyped components and assembling them using computer 
+							software in order to develop a template we can use to build the robot. I have been a part Zebra Robotics for around 4 years now, 
+							with my beginnings stemming from LEGO robotics. I have participated in two FLL competitions with advancements to the provincial level, 
+							and two WRO competitions with one advancement to the national level for LEGO robotics. In VEX robotics, I have a participated in one 
+							previous competition in 2019. I joined VEX robotics to expand my knowledge and develop my teamwork, communication, and critical 
+							thinking skills. I hope to transfer these skills developed by my participation in robotics competitions into the professional 
+							world where problem solving, and communication is crucial.
+							</p>
+						</div>
+						
+						<!-- Modal footer -->
+						<div class="modal-footer">
+							<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+						</div>							
+					</div>
+				</div>
+			</div>
+			
+			<!-- Nikhil -->
+			<div class="modal fade" id="Nikhil">
+				<div class="modal-dialog modal-xl" role="document">
+					<div class="modal-content">
+						
+						<!-- Modal body -->
+						<div class="modal-body">
+							<button type="button" class="close" data-dismiss="modal"><p style="font-size:calc(2vw + 2vh)">&times;</p></button>
+							<br>
+							<h2 class="text-center">Nikhil</h2>
+							<p class="text-center"><i>Team Captain</i></p>
+							<img class="mx-auto d-block" src="Liftoff.jpg" width="50%" alt="idk">
+							<p class="text-center" style="font-size:calc(0.8vw + 0.8vh)"> Hi! I'm Nikhil, a Grade 12 student on 3505E - 
+							I've been on the team for the last 4 years. Robotics is my biggest passion, and I'm glad to be involved in most 
+							aspects of the team, from programming to design. I can't really say that I like one of them over any other - 
+							every part is essential and I find them all highly interesting in their own way. I've participated in various 
+							robotics competitions - including FLL, WRO, VRC, and FRC - over the past 7 years. What makes VRC special to me 
+							is that it allows for the opportunity to experience the interplay between the various fields that make up robotics 
+							at a scale where complete specialization isn't necessary. I have high hopes for this team, and I'm proud to be a part of it.
+							</p>
+						</div>
+
+						<!-- Modal footer -->
+						<div class="modal-footer">
+							<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+						</div>								
+					</div>
+				</div>
+			</div>
+			
+			<!-- Armena -->
+			<div class="modal fade" id="Armena">
+				<div class="modal-dialog modal-xl" role="document">
+					<div class="modal-content">
+						
+						<!-- Modal body -->
+						<div class="modal-body">
+							<button type="button" class="close" data-dismiss="modal"><p style="font-size:calc(2vw + 2vh)">&times;</p></button>
+							<br>
+							<h2 class="text-center">Armena</h2>
+							<p class="text-center"><i>Roles</i></p>
+							<img class="mx-auto d-block" src="Liftoff.jpg" width="50%" alt="idk">
+							<p class="text-center" style="font-size:calc(0.8vw + 0.8vh)"> Hello, my name is Armina Aryaie and I am currently 
+							a grade 11 IB student. I’m in charge of documenting and drawing in the engineering notebook, as well as doing some
+							programming and building. I’ve been a part of this team since the beginning and have done other 
+							events such as FLL, WRO and Zone 1, and successfully making it to provincials for each. I joined VRC because I am 
+							passionate about robotics and plan on pursuing it as a career in the future. I specifically joined this team
+							because of the positive environment and amazing people who are just as passionate as me.
+							</p>
+						</div>	
+
+						<!-- Modal footer -->
+						<div class="modal-footer">
+							<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+						</div>								
+					</div>
+				</div>
+			</div>
+			
+			<!-- Dasxin -->
+			<div class="modal fade" id="Dasxin">
+				<div class="modal-dialog modal-xl" role="document">
+					<div class="modal-content">
+						
+						<!-- Modal body -->
+						<div class="modal-body">
+							<button type="button" class="close" data-dismiss="modal"><p style="font-size:calc(2vw + 2vh)">&times;</p></button>
+							<br>
+							<h2 class="text-center">Dasxin</h2>
+							<p class="text-center"><i>Roles</i></p>
+							<img class="mx-auto d-block" src="Liftoff.jpg" width="50%" alt="idk">
+							<p class="text-center" style="font-size:calc(0.8vw + 0.8vh)"> About yourself
+							</p>
+						</div>	
+
+						<!-- Modal footer -->
+						<div class="modal-footer">
+							<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+						</div>								
+					</div>
+				</div>
+			</div>	
+
+			<!-- Vishal -->
+			<div class="modal fade" id="Vishal">
+				<div class="modal-dialog modal-xl" role="document">
+					<div class="modal-content">
+						
+						<!-- Modal body -->
+						<div class="modal-body">
+							<button type="button" class="close" data-dismiss="modal"><p style="font-size:calc(2vw + 2vh)">&times;</p></button>
+							<br>
+							<h2 class="text-center">Vishal</h2>
+							<p class="text-center"><i>Roles</i></p>
+							<img class="mx-auto d-block" src="Liftoff.jpg" width="50%" alt="idk">
+							<p class="text-center" style="font-size:calc(0.8vw + 0.8vh)"> About yourself
+							</p>
+						</div>
+
+						<!-- Modal footer -->
+						<div class="modal-footer">
+							<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+						</div>								
+					</div>
+				</div>
+			</div>
+
+			<!-- Joshua -->
+			<div class="modal fade" id="Joshua">
+				<div class="modal-dialog modal-xl" role="document">
+					<div class="modal-content">
+						
+						<!-- Modal body -->
+						<div class="modal-body">
+							<button type="button" class="close" data-dismiss="modal"><p style="font-size:calc(2vw + 2vh)">&times;</p></button>
+							<br>
+							<h2 class="text-center">Joshua</h2>
+							<p class="text-center"><i>Programming, Electrical</i></p>
+							<img class="mx-auto d-block" src="Liftoff.jpg" width="50%" alt="idk">
+							<p class="text-center" style="font-size:calc(0.8vw + 0.8vh)"> Hi I’m Josh!
+							My roles on our team are, contributing to team ideas such as, some design discussions, mechanical team and 
+							helping manufacture parts. However, another role I play on the team is the controls aspect of the team 
+							(programming and electrical) which I consider my strength in comparison to all other areas. My previous 
+							and current experience of robotics consists of many different things. I have done 1 year of FLL, 2 years 
+							of WRO, 2 years of VEX robotics and 2 years of FRC. I joined a VEX robotics team for the following reasons.
+								<ul class="mx-auto" style="font-size:calc(0.8vw + 0.8vh); width:50%;" >
+									<li>To push myself to learn as much as I can</li>
+									<li>There are concepts/strategies that I learn in VEX that I can't learn elsewhere</li>
+									<li>I am a competitive person and VEX allows me to experience that feeling when building and competing</li>
+								</ul>
+							</p>
+						</div>
+
+						<!-- Modal footer -->
+						<div class="modal-footer">
+							<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+						</div>								
+					</div>
+				</div>
+			</div>			
 		</div>
-	
-		<div class="row">
-			<div class="columnd" style="background-color:#aaa;">
-			  <h2>Column 1</h2>
-			  <p>Some text..</p>
+		
+		<a class="anchor" id="TimelineAnchor"></a>
+		<div id="Timeline" class="container-fluid"  style="background-color:#C9D5B5;">
+			<div class="row justify-content-center">
+				<h2 class="py-3" style="font-size:3em;">Our Story</h2>
+			</div>
+			
+			<div class="timeline">
+				<div class="timeContainer timeLeft">
+					<div class="timeContent" style="background: linear-gradient(rgba(0,0,0, 0.5), rgba(0,0,0, 0.5)),url(a.jpg);">
+						<h2>2017</h2>
+						<p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec 
+						admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis
+						iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto 
+						primis ea eam.</p>
+					</div>
+				</div>
+				
+				<div class="timeContainer timeRight">
+					<div class="timeContent" style="background: linear-gradient(rgba(0,0,0, 0.5), rgba(0,0,0, 0.5)),url(c.jpg);">
+						<h2>2017</h2>
+						<p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec 
+						admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis
+						iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto 
+						primis ea eam.</p>
+					</div>
+				</div>				
+			</div>
+		</div>
 
-			</div>
-			<div class="columne" style="background-color:#bbb;">
-			  <img src="Liftoff.jpg" width="100%" height="100%"class="mx-auto d-block shadow-lg p-3 mb-5 bg-transparent rounded"alt="idk">
-			</div>
-			<div class="columnf" style="background-color:#bbb;">
-				<img src="Liftoff.jpg" width="100%" height="100%"class="mx-auto d-block shadow-lg p-3 mb-5 bg-transparent rounded"alt="idk">
-			  </div>
-			</div>
-			<p class="text-center" style="font-size:1.2em;">Fusce a nisl tempor, volutpat ex eget, interdum urna. Aliquam erat volutpat. Nulla sagittis sem ac 
-				augue vulputate, nec mollis nunc rhoncus. Cras vitae commodo nisi. Duis id laoreet
-				sem, sed posuere urna. Duis ullamcorper ut tellus eu faucibus. Praesent velit orci,
-				suscipit id scelerisque vitae, auctor nec mauris. Pellentesque habitant morbi 
-				tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+		
+		
 		<footer>
-			<a href="https://zebrarobotics.com/" class="footera">
-				<img src="ParsecLogoSemiTransparent.ico" class="rounded" alt="Cinque Terre" width="15%" style="vertical-align:middle;margin:0px 80px">
-				<img src="ParsecLogoSemiTransparent.ico" class="rounded" alt="Cinque Terre" width="15%"style="vertical-align:middle;margin:0px 80px">
-			</a>
-			<div class="center">
-				<p>Copyright 2020 Parsec - Daxsin and Vishal</p>
-			  </div> 
+			<p>Copyright 2020 Parsec - Created By Daxsin and Vishal</p>
 		</footer>
 		
 	</body>
