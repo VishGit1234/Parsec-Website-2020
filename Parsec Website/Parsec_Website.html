@@ -9,7 +9,7 @@
 		<title>Parsec 2020-2021</title>
 		
 		<!-- Website Logo (Team Logo) -->
-		<link rel="shortcut icon" href="ParsecLogoSemiTransparent.ico" />
+		<link rel="shortcut icon" href="ParsecIcon.ico" />
 		
 		<!-- Link to fonts -->
 		<link href="https://fonts.googleapis.com/css2?family=Barlow&family=Playfair+Display:wght@900&display=swap"
@@ -34,7 +34,7 @@
 
 		<!-- Navigation Bar -->
 		<nav class="navbar fixed-top navbar-expand-md navbar-dark" id="Pnavbar">
-			<img src="ParsecLogoTransparent.png" class="navbar-brnad" height="50px" width="65px" style="padding-right: 20px">
+			<img src="ParsecLogoWhite.png" class="navbar-brnad" height="50px" style="padding-right: 20px">
 			
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
 				<span class="navbar-toggler-icon"></span>
@@ -55,7 +55,13 @@
 						<a href="#TimelineAnchor" class="pr-3">Our Story</a>
 					</li>
 					
+					<li class="nav-item active">
+						<a href="Sponsors.html" class="pr-3">Our Sponsors</a>
+					</li>
 
+					<li class="nav-item active">
+						<a href="AboutVex.html" class="pr-3">About Vex</a>
+					</li>
 				</ul>
 			</div>
 			
@@ -76,7 +82,7 @@
 		
 		<!-- Carousel -->
 		<a class="anchor" id="HeroCarouselAnchor"></a>
-		<div id="HeroCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+		<div id="HeroCarousel" class="carousel slide carousel-fade" data-pause="false" data-ride="carousel">
 		
 			<!-- Carousel Indicators -->
 			<ul class="carousel-indicators">
@@ -88,19 +94,26 @@
 			<!-- Actual Carousel -->
 			<div class="carousel-inner">
 				<!-- Add Proper Images -->
-				<div class="carousel-item active">
-				  <img src="a.jpg" alt="idk" class="carImg">
+				<div class="carousel-item active">	
+					<img src="Robot-1.jpeg" alt="Picture of Robot" class="carImg">	
 				</div>
 				<div class="carousel-item">
-				  <img src="b.jpg" alt="idk" class="carImg">
+					<img src="Robot-2.jpg" alt="Picture of Robot" class="carImg">
 				</div>	
 				<div class="carousel-item">
-				  <img src="c.jpg" alt="idk" class="carImg">
+					<img src="2021-2.jpeg" alt="Picture of Robot" class="carImg">
 				</div>	
 			</div>
 			
 			<!-- Team Name -->
-			<div class="centered">Parsec<br><small class="centered-small">2020-2021</small></div>
+			<div class="centered align-middle">
+				<span class="mainTitle"></span>
+				<br>
+				<small class="centered-small">2020-2021</small>
+				<br>
+				<br>
+				<a class="btn btn-primary LearnMore" href="#AboutUsAnchor" role="button">Learn More</a>
+			</div>
 					
 			<!-- Left and right controls -->
 			<a class="carousel-control-prev" href="#HeroCarousel" data-slide="prev">
@@ -118,25 +131,29 @@
 				<h2 class="pt-3" style="font-size:3em;">About Us</h2>
 			</div>
 			
-			<!-- Row of 3 pictures (example pictures currently inserted -->
+			<!-- Row of 3 pictures -->
 			<div class="row" style="background-color:#F7F3E3;">
+				<div class="col-sm pt-2 img3s">
+					<img src="2021-1.jpeg" class="mx-auto d-block shadow-lg p-3 mb-5 bg-transparent rounded" alt="Picture of Parsec Working" width="90%">
+				</div>
 				<div class="col-sm pt-2">
-					<img src="Liftoff.jpg" class="mx-auto d-block shadow-lg p-3 mb-5 bg-transparent rounded" alt="idk" width="90%">
+					<div class="mx-auto d-block shadow-lg p-3 mb-5 bg-transparent rounded" style="height: 90%;width: 90%;">
+						<iframe width="100%" height="100%"
+						src="https://www.youtube.com/embed/rQdh3Wh_TxY?controls=0&autoplay=1&mute=1&loop=1&rel=0&disablekb=1&modestbranding=1">
+						</iframe>
+					</div>
 				</div>
 				<div class="col-sm pt-2 img3s">
-					<img src="Liftoff.jpg" class="mx-auto d-block shadow-lg p-3 mb-5 bg-transparent rounded" alt="idk" width="90%">
-				</div>
-				<div class="col-sm pt-2 img3s">
-					<img src="Liftoff.jpg" class="mx-auto d-block shadow-lg p-3 mb-5 bg-transparent rounded" alt="idk" width="90%">
+					<img src="2021-3.jpeg" class="mx-auto d-block shadow-lg p-3 mb-5 bg-transparent rounded" alt="Picture of Parsec Working" width="90%">
 				</div>
 			</div>
 			
 			<div class="row" style="background-color:#F7F3E3;">
 				<p class="text-center mx-auto pb-3" style="width: 80%;">
 				We are Team 3505E, also known as Parsec, a VRC team from Mississauga, Canada. Since our beginnings
-				in 2016 at Zebra Robotics Mississauga, we have gone through many failures, iterations 
+				in 2017 at Zebra Robotics Mississauga, we have gone through many failures, iterations 
 				and successes to become the team we are today. As a team we not only look to compete 
-				in VRC but also have fun and learn along the way! Our team is composed of passionate high-school
+				but also have fun and learn along the way! Our team is composed of passionate high-school
 				students that truly enjoy all things robotics.</p>
 			</div>
 
@@ -146,14 +163,14 @@
 			</div>
 			
 			<!-- Profile Pictures and Popups -->
-			<div class="row">
+			<div class="row justify-content-center">
 				
 				<!-- Nikhil -->
-				<div class="col-sm">
+				<div class="col-sm-3">
 					<div class="mx-auto profiles">
 						<button type="button" class="btn shadow-none p-0 profBtn" data-toggle="modal" data-target="#Nikhil">
 							<div class="overlay-effect">
-								<img src="Liftoff.jpg" width="100%" alt="idk">
+								<img src="Nikhil.jpg" width="100%" alt="Picture of Nikhil">
 							</div>
 							
 						</button>
@@ -169,11 +186,11 @@
 				</div>
 				
 				<!-- Adam -->
-				<div class="col-sm">
+				<div class="col-sm-3">
 					<div class="mx-auto profiles">
 						<button type="button" class="btn shadow-none p-0 profBtn" data-toggle="modal" data-target="#Adam">
 							<div class="overlay-effect">
-								<img src="Liftoff.jpg" width="100%" alt="idk">
+								<img src="Adam.jpg" width="100%" alt="Picture of Adam">
 							</div>
 							
 						</button>
@@ -183,39 +200,39 @@
 								&#10133;
 							</button>
 						</h2>
-						<p class="text-center">Designing, Building</p>
+						<p class="text-center">Design, Build</p>
 					</div>
 				</div>
 				
-				<!-- Armena -->
-				<div class="col-sm">
+				<!-- Armina -->
+				<div class="col-sm-3">
 					<div class="mx-auto profiles">
-						<button type="button" class="btn shadow-none p-0 profBtn" data-toggle="modal" data-target="#Armena">
+						<button type="button" class="btn shadow-none p-0 profBtn" data-toggle="modal" data-target="#Armina">
 							<div class="overlay-effect">
-								<img src="Liftoff.jpg" width="100%" alt="idk">
+								<img src="Armina.jpg" width="100%" alt="Picture of Armina">
 							</div>
 							
 						</button>
 						
 						<h2 class="text-center">
-							Armena
-							<button type="button" class="btn btn-secondary shadow-none p-0 mb-2" data-toggle="modal" data-target="#Armena">
+							Armina
+							<button type="button" class="btn btn-secondary shadow-none p-0 mb-2" data-toggle="modal" data-target="#Armina">
 								&#10133;
 							</button>
 						</h2>
-						<p class="text-center">Documentation, Programming</p>
+						<p class="text-center">Documentation, Program</p>
 					</div>
 				</div>
 			</div>
 			
 			<!-- Another row of profiles -->
-			<div class="row">
+			<div class="row justify-content-center">
 				<!-- Daxsin -->
-				<div class="col-sm">
+				<div class="col-sm-3">
 					<div class="mx-auto profiles">
-						<button type="button" class="btn shadow-none p-0 profBtn" data-toggle="modal" data-target="#Dasxin">
+						<button type="button" class="btn shadow-none p-0 profBtn" data-toggle="modal" data-target="#Daxsin">
 							<div class="overlay-effect">
-								<img src="Liftoff.jpg" width="100%" alt="idk">
+								<img src="Daxsin.jpg" width="100%" alt="Picture of Daxsin">
 							</div>
 							
 						</button>
@@ -225,16 +242,16 @@
 								&#10133;
 							</button>
 						</h2>
-						<p class="text-center">Roles</p>
+						<p class="text-center">Web Dev, Build</p>
 					</div>
 				</div>
 				
 				<!-- Vishal -->
-				<div class="col-sm">
+				<div class="col-sm-3">
 					<div class="mx-auto profiles">
 						<button type="button" class="btn shadow-none p-0 profBtn" data-toggle="modal" data-target="#Vishal">
 							<div class="overlay-effect">
-								<img src="Liftoff.jpg" width="100%" alt="idk">
+								<img src="Vishal.jpg" width="100%" alt="Picture of Vishal">
 							</div>
 							
 						</button>
@@ -245,27 +262,90 @@
 								&#10133;
 							</button>
 						</h2>
-						<p class="text-center">Roles</p>
+						<p class="text-center">Web Dev, Design</p>
 					</div>
 				</div>
 				
-				<!-- Joshua -->
-				<div class="col-sm">
+				<!-- Josh -->
+				<div class="col-sm-3">
 					<div class="mx-auto profiles">
-						<button type="button" class="btn shadow-none p-0 profBtn" data-toggle="modal" data-target="#Joshua">
+						<button type="button" class="btn shadow-none p-0 profBtn" data-toggle="modal" data-target="#Josh">
 							<div class="overlay-effect">
-								<img src="Liftoff.jpg" width="100%" alt="idk">
+								<img src="Josh.jpg" width="100%" alt="Picture of Josh">
 							</div>
 							
 						</button>
 						
 						<h2 class="text-center">
-							Joshua
-							<button type="button" class="btn btn-secondary shadow-none p-0 mb-2" data-toggle="modal" data-target="#Joshua">
+							Josh
+							<button type="button" class="btn btn-secondary shadow-none p-0 mb-2" data-toggle="modal" data-target="#Josh">
 								&#10133;
 							</button>
 						</h2>
-						<p class="text-center">Programming, Electrical</p>
+						<p class="text-center">Program, Electrical</p>
+					</div>
+				</div>
+			</div>
+			
+			<!-- Coach Profiles -->
+			<div class="row justify-content-center">
+			
+				<!-- Coach Satish -->
+				<div class="col-sm-3">
+					<div class="mx-auto profiles">
+						<button type="button" class="btn shadow-none p-0 profBtn" data-toggle="modal" data-target="#Coach">
+							<div class="overlay-effect">
+								<img src="Satish.jpeg" width="100%" alt="Picture of Satish">
+							</div>
+							
+						</button>
+						<h2 class="text-center">
+							Satish
+							<button type="button" class="btn btn-secondary shadow-none p-0 mb-2" data-toggle="modal" data-target="#Coach">
+								&#10133;
+							</button>
+						</h2>
+						<p class="text-center">Greatest Coach Ever</p>
+					</div>
+				</div>
+				
+				<!-- Coach Tahmoor -->
+				<div class="col-sm-3">
+					<div class="mx-auto profiles">
+						<button type="button" class="btn shadow-none p-0 profBtn" data-toggle="modal" data-target="#Coach">
+							<div class="overlay-effect">
+								<img src="Tahmoor.jpeg" width="100%" alt="Picture of Tahmoor">
+							</div>
+							
+						</button>
+						
+						<h2 class="text-center">
+							Tahmoor
+							<button type="button" class="btn btn-secondary shadow-none p-0 mb-2" data-toggle="modal" data-target="#Coach">
+								&#10133;
+							</button>
+						</h2>
+						<p class="text-center">Also The Greatest Coach Ever</p>
+					</div>
+				</div>
+				
+				<!-- Srini -->
+				<div class="col-sm-3">
+					<div class="mx-auto profiles">
+						<button type="button" class="btn shadow-none p-0 profBtn" data-toggle="modal" data-target="#Srini">
+							<div class="overlay-effect">
+								<img src="Srini.jpeg" width="100%" alt="Picture of Srini">
+							</div>
+							
+						</button>
+						
+						<h2 class="text-center">
+							Srini
+							<button type="button" class="btn btn-secondary shadow-none p-0 mb-2" data-toggle="modal" data-target="#Srini">
+								&#10133;
+							</button>
+						</h2>
+						<p class="text-center">Mentor</p>
 					</div>
 				</div>
 			</div>
@@ -280,9 +360,9 @@
 							<button type="button" class="close" data-dismiss="modal"><p style="font-size:calc(2vw + 2vh)">&times;</p></button>
 							<br>
 							<h2 class="text-center">Adam</h2>
-							<p class="text-center"><i>Designing, Building</i></p>
-							<img class="mx-auto d-block" src="Liftoff.jpg" width="50%" alt="idk">
-							<p class="text-center" style="font-size:calc(0.8vw + 0.8vh)">Hi, my name is Adam and I am a member of the Parsec 2020-2021 team!
+							<p class="text-center"><i>Design, Building</i></p>
+							<img class="mx-auto d-block" src="Adam.jpg" width="30%" alt="Picture of Adam">
+							<p class="text-center" style="font-size:1.3em">Hi, my name is Adam and I am a member of the Parsec 2020-2021 team!
 							Primarily, I contribute to the Design, CAD, and Build of our VEX robot for the Change Up challenge. This means I am responsible
 							for brainstorming and designing various functionalities and optimizations for our robot to complete challenges and score points
 							efficiently. Additionally, I am responsible for taking previously prototyped components and assembling them using computer 
@@ -314,8 +394,8 @@
 							<br>
 							<h2 class="text-center">Nikhil</h2>
 							<p class="text-center"><i>Team Captain</i></p>
-							<img class="mx-auto d-block" src="Liftoff.jpg" width="50%" alt="idk">
-							<p class="text-center" style="font-size:calc(0.8vw + 0.8vh)"> Hi! I'm Nikhil, a Grade 12 student on 3505E - 
+							<img class="mx-auto d-block" src="Nikhil.jpg" width="30%" alt="Picture of Nikhil">
+							<p class="text-center" style="font-size:1.3em"> Hi! I'm Nikhil, a Grade 12 student on 3505E - 
 							I've been on the team for the last 4 years. Robotics is my biggest passion, and I'm glad to be involved in most 
 							aspects of the team, from programming to design. I can't really say that I like one of them over any other - 
 							every part is essential and I find them all highly interesting in their own way. I've participated in various 
@@ -333,8 +413,8 @@
 				</div>
 			</div>
 			
-			<!-- Armena -->
-			<div class="modal fade" id="Armena">
+			<!-- Armina -->
+			<div class="modal fade" id="Armina">
 				<div class="modal-dialog modal-xl" role="document">
 					<div class="modal-content">
 						
@@ -342,13 +422,13 @@
 						<div class="modal-body">
 							<button type="button" class="close" data-dismiss="modal"><p style="font-size:calc(2vw + 2vh)">&times;</p></button>
 							<br>
-							<h2 class="text-center">Armena</h2>
+							<h2 class="text-center">Armina</h2>
 							<p class="text-center"><i>Roles</i></p>
-							<img class="mx-auto d-block" src="Liftoff.jpg" width="50%" alt="idk">
-							<p class="text-center" style="font-size:calc(0.8vw + 0.8vh)"> Hello, my name is Armina Aryaie and I am currently 
+							<img class="mx-auto d-block" src="Armina.jpg" width="30%" alt="Picture of Armina">
+							<p class="text-center" style="font-size:1.3em"> Hello, my name is Armina Aryaie and I am currently 
 							a grade 11 IB student. I’m in charge of documenting and drawing in the engineering notebook, as well as doing some
 							programming and building. I’ve been a part of this team since the beginning and have done other 
-							events such as FLL, WRO and Zone 1, and successfully making it to provincials for each. I joined VRC because I am 
+							events such as FLL, WRO and Zone 1, successfully making it to provincials for each. I joined VRC because I am 
 							passionate about robotics and plan on pursuing it as a career in the future. I specifically joined this team
 							because of the positive environment and amazing people who are just as passionate as me.
 							</p>
@@ -362,8 +442,8 @@
 				</div>
 			</div>
 			
-			<!-- Dasxin -->
-			<div class="modal fade" id="Dasxin">
+			<!-- Daxsin -->
+			<div class="modal fade" id="Daxsin">
 				<div class="modal-dialog modal-xl" role="document">
 					<div class="modal-content">
 						
@@ -371,10 +451,18 @@
 						<div class="modal-body">
 							<button type="button" class="close" data-dismiss="modal"><p style="font-size:calc(2vw + 2vh)">&times;</p></button>
 							<br>
-							<h2 class="text-center">Dasxin</h2>
-							<p class="text-center"><i>Roles</i></p>
-							<img class="mx-auto d-block" src="Liftoff.jpg" width="50%" alt="idk">
-							<p class="text-center" style="font-size:calc(0.8vw + 0.8vh)"> About yourself
+							<h2 class="text-center">Daxsin</h2>
+							<p class="text-center"><i>Web Dev, Building</i></p>
+							<img class="mx-auto d-block" src="Daxsin.jpg" width="30%" alt="Picture of Daxsin">
+							<p class="text-center" style="font-size:1.3em">
+							My name is Daxsin Finnegan and on this team my main roles are helping to create the website and building
+							the robot. I enjoy building and designing robots a lot and this is the area where I have really helped my team the 
+							most. I have been doing robotics at Zebra Robotics for a few years and looked forward to the day I would be able 
+							to join the Vex team at Zebra. I have gone to many EV3 competitions such as WRO, Zone One and FLL in 
+							which my team qualified for the international competition. I have also been 
+							coding in python for a few years and learned HTML and CSS to help make the website this year. As a rookie,
+							I still have a lot to learn about Vex but so far I am really enjoying it and I looking forward to work hard to 
+							pick up as much knowledge from my peers and coaches as possible in order to help my team even more in the future.
 							</p>
 						</div>	
 
@@ -396,9 +484,16 @@
 							<button type="button" class="close" data-dismiss="modal"><p style="font-size:calc(2vw + 2vh)">&times;</p></button>
 							<br>
 							<h2 class="text-center">Vishal</h2>
-							<p class="text-center"><i>Roles</i></p>
-							<img class="mx-auto d-block" src="Liftoff.jpg" width="50%" alt="idk">
-							<p class="text-center" style="font-size:calc(0.8vw + 0.8vh)"> About yourself
+							<p class="text-center"><i>Web Dev, Design</i></p>
+							<img class="mx-auto d-block" src="Vishal.jpg" width="30%" alt="Picture of Vishal">
+							<p class="text-center" style="font-size:1.3em">
+							Hi! My name is Vishal a Grade 11 student on team 3505E. On this team I mainly focus on
+							working on and maintaining this website (I'm definitely proud of it!) as well as designing the robot,
+							although I also chip in to help with building and programming (and documenting along the way!). I've been 
+							doing robotics for the past 5 years and have participated in a variety of competitions, from FLL to WRO. 
+							When I joined VRC 3 years ago I wanted to experience doing robotics on a larger scale, being able to build 
+							huge robots and use metal pieces and powerful motors. Suffice to say, I have truly enjoyed participating and VRC
+							and hope to help take our team to the next level.
 							</p>
 						</div>
 
@@ -410,8 +505,8 @@
 				</div>
 			</div>
 
-			<!-- Joshua -->
-			<div class="modal fade" id="Joshua">
+			<!-- Josh -->
+			<div class="modal fade" id="Josh">
 				<div class="modal-dialog modal-xl" role="document">
 					<div class="modal-content">
 						
@@ -419,10 +514,10 @@
 						<div class="modal-body">
 							<button type="button" class="close" data-dismiss="modal"><p style="font-size:calc(2vw + 2vh)">&times;</p></button>
 							<br>
-							<h2 class="text-center">Joshua</h2>
+							<h2 class="text-center">Josh</h2>
 							<p class="text-center"><i>Programming, Electrical</i></p>
-							<img class="mx-auto d-block" src="Liftoff.jpg" width="50%" alt="idk">
-							<p class="text-center" style="font-size:calc(0.8vw + 0.8vh)"> Hi I’m Josh!
+							<img class="mx-auto d-block" src="Josh.jpg" width="30%" alt="Picture of Josh">
+							<p class="text-center" style="font-size:1.3em"> Hi I’m Josh!
 							My roles on our team are, contributing to team ideas such as, some design discussions, mechanical team and 
 							helping manufacture parts. However, another role I play on the team is the controls aspect of the team 
 							(programming and electrical) which I consider my strength in comparison to all other areas. My previous 
@@ -442,6 +537,60 @@
 						</div>								
 					</div>
 				</div>
+			</div>
+
+			<!-- Coaches -->
+			<div class="modal fade" id="Coach">
+				<div class="modal-dialog modal-xl" role="document">
+					<div class="modal-content">
+						
+						<!-- Modal body -->
+						<div class="modal-body">
+							<button type="button" class="close" data-dismiss="modal"><p style="font-size:calc(2vw + 2vh)">&times;</p></button>
+							<br>
+							<h2 class="text-center">Our Coaches</h2>
+							<p class="text-center"><i>Coach Tahmoor and Satish</i></p>
+							<img class="mx-auto d-block" src="Coaches.jpg" width="30%" alt="Picture of Both Coaches">
+							<p class="text-center" style="font-size:1.3em">
+							Since our team was formed, Coach Satish and Tahmoor have guided and mentored us. Through the roller-coaster
+							that is a VRC season, they have always been along our side. They are both very 
+							knowledgable and have given us valuable advice while also helping us out in many ways including, cutting parts for us or 
+							helping pack everything up for a competition. 
+							</p>
+						</div>	
+
+						<!-- Modal footer -->
+						<div class="modal-footer">
+							<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+						</div>								
+					</div>
+				</div>
+			</div>	
+
+			<!-- Srini -->
+			<div class="modal fade" id="Srini">
+				<div class="modal-dialog modal-xl" role="document">
+					<div class="modal-content">
+						
+						<!-- Modal body -->
+						<div class="modal-body">
+							<button type="button" class="close" data-dismiss="modal"><p style="font-size:calc(2vw + 2vh)">&times;</p></button>
+							<br>
+							<h2 class="text-center">Srini</h2>
+							<p class="text-center"><i>Mentor</i></p>
+							<img class="mx-auto d-block" src="Srini.jpeg" width="30%" alt="Picture of Srini">
+							<p class="text-center" style="font-size:1.3em">
+							Srini gave us valuable advice on how to setup and use a small CNC machine we had purchased. This allowed us to cut custom parts 
+							out of lexan right in our robotics centre. 
+							</p>
+						</div>	
+
+						<!-- Modal footer -->
+						<div class="modal-footer">
+							<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+						</div>								
+					</div>
+				</div>
 			</div>			
 		</div>
 		
@@ -453,24 +602,68 @@
 			
 			<div class="timeline">
 				<div class="timeContainer timeLeft">
-					<div class="timeContent" style="background: linear-gradient(rgba(0,0,0, 0.5), rgba(0,0,0, 0.5)),url(a.jpg);">
-						<h2>2017</h2>
-						<p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec 
-						admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis
-						iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto 
-						primis ea eam.</p>
+					<div class="timeContent" style="background: linear-gradient(rgba(0,0,0, 0.4), rgba(0,0,0, 0.4)),url(2016-1.jpg);">
+						<h2>2017-2018</h2>
+						<p>Team 76529Z (Checkers) was founded and became the first Vex team from Zebra Robotics. No one
+						had any experience in Vex but their participation in the "In The Zone" challenge
+						set the foundation for the following years. Of the members of 2020-2021 Parsec,
+						3 (Armina and Nikhil) and one of our amazing coaches (Tahmoor) were part of this team.</p>
 					</div>
 				</div>
 				
 				<div class="timeContainer timeRight">
-					<div class="timeContent" style="background: linear-gradient(rgba(0,0,0, 0.5), rgba(0,0,0, 0.5)),url(c.jpg);">
-						<h2>2017</h2>
-						<p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec 
-						admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis
-						iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto 
-						primis ea eam.</p>
+					<div class="timeContent" style="background: linear-gradient(rgba(0,0,0, 0.5), rgba(0,0,0, 0.5)),url(2017-3.jpg);">
+						<h2>2018-2019</h2>
+						<p>During the Tower Takeover season our Vex program expanded into two teams, Techno-Logics and Parsec. 
+						The two teams competed in one regional competition and came in 33rd and 39th place, respectively.
+						Still being a relatively new team everyone participated to gain valuable experiences for the future. 
+						</p>
 					</div>
-				</div>				
+				</div>
+
+				<div class="timeContainer timeLeft">
+					<div class="timeContent" style="background: linear-gradient(rgba(0,0,0, 0.5), rgba(0,0,0, 0.5)),url(2019-1.jpg);">
+						<h2>2019-2020</h2>
+						<p> After gaining experience for the past 1 or 2 years, Parsec and Techno-Logics compete in two regional competitions.
+						At the second competition in Collingwood, Ontario, Techno-Logics wins the Judges Award and Parsec 
+						makes it to the Finals qualifying them for the Ontario VRC Provincial Worlds Qualifier.</p>
+					</div>
+				</div>
+				
+				<div class="timeContainer timeRight">
+					<div class="timeContent" style="background: linear-gradient(rgba(0,0,0, 0.5), rgba(0,0,0, 0.5)),url(2019-2.jpg);">
+						<h2>February 2019</h2>
+						<p>Parsec makes history by being the first team from our program to participate in a Worlds Qualifier. While
+						we were unsuccessful in qualifying for Vex Worlds we gained valuable experience that will help us advance further 
+						in future years.
+						</p>
+					</div>
+				</div>
+				
+				<div class="timeContainer timeLeft">
+					<div class="timeContent" style="background: linear-gradient(rgba(0,0,0, 0.5), rgba(0,0,0, 0.5)),url(2021-1.jpeg);">
+						<h2>May 2019</h2>
+						<p> Do to COVID-19, Team Techno-Logics merges into Team Parsec to form this year's team. Keeping the name 
+						Parsec and adopting a new number (3505E), we began the 2020-2021 season with online meetings to design 
+						and plan everything in order to be prepared for when we could finally return back to Zebra Robotics and start building.
+						</p>						
+					</div>
+				</div>
+				
+				<div class="timeContainer timeRight">
+					<div class="timeContent" style="background: linear-gradient(rgba(0,0,0, 0.5), rgba(0,0,0, 0.5)),url(2021-2.jpeg);">
+						<h2>August 2019</h2>
+						<p> Our team finally meets in person for the first time and armed with the planning we had done online, we 
+						immediately start building our robot for the 2020-2021 VRC Challenge "Change Up".
+						</p>						
+					</div>
+				</div>
+				
+				<div class="timeContainer timeLeft">
+					<div class="timeContent" style="background: linear-gradient(rgba(0,0,0, 0.8), rgba(0,0,0, 0.5))">
+						<h2>Our journey continues...</h2>						
+					</div>
+				</div>
 			</div>
 		</div>
 
@@ -478,6 +671,7 @@
 		
 		<footer>
 			<p>Copyright 2020 Parsec - Created By Daxsin and Vishal</p>
+			<img class="pb-3" src="ParsecLogoWhite.png" height="70%">
 		</footer>
 		
 	</body>
